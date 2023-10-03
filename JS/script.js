@@ -25,5 +25,17 @@ document.getElementById('calculate').addEventListener('click', function(){
 
 });
 
+document.getElementById('savings').addEventListener('click', function(){
+    const balance = document.getElementById('balance');
+    const savingAmount = document.getElementById('saving-amount');
+
+    const saveAmount = balance * 0.2;
+    savingAmount.innerText = saveAmount;
+
+    const remainingBalance = document.getElementById('remaining-balance');
+    const totalRemainingBalance = balance - saveAmount;
+    remainingBalance.innerText = totalRemainingBalance;
+
+});
 
 
