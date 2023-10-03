@@ -19,6 +19,9 @@ document.getElementById('calculate').addEventListener('click', function(){
     const calculateExpenses = foodAmount + rentAmount + clothAmount;
     expense.innerText = calculateExpenses;
 
+    const balance = document.getElementById('balance');
+    const balanceRemaining = incomeAmount - calculateExpenses;
+    balance.innerText = balanceRemaining;
 
 });
 
